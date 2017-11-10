@@ -204,7 +204,7 @@ section.features .feature-item {
 section.cta {
   position: relative;
   padding: 250px 0;
-  background-image: url("../img/bg-cta.jpg");
+  background-image: url("../img/reading-magazine.jpg");
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -306,3 +306,7 @@ footer {
 .btn-xl {
   font-size: 11px;
   padding: 15px 45px; }
+
+.features .feature-item.social-icons i {
+  font-size: 40px;
+  display: inline; }

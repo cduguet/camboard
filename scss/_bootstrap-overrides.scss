@@ -37,3 +37,20 @@
     font-size: 11px;
     padding: 15px 45px;
 }
+
+.features {
+    .feature-item.social-icons {
+        i {
+            font-size: 40px;
+            display:inline;
+        }
+    }
+}
+
+section.cta {    
+    .cta-content {
+        .container {
+            // float: right;            
+        }
+    }
+}
