@@ -58,7 +58,7 @@
           <div class="col-lg-7 my-auto">
             <div class="header-content mx-auto">
               <h1 class="mb-5">With camboard no more manually typing from a piece of paper!</h1>
-              <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Buy</a>
+              <button href="#download" id="open-popup" class="btn btn-outline btn-xl js-scroll-trigger">Buy</button>
             </div>
           </div>
           <div class="col-lg-5 my-auto">
@@ -72,7 +72,6 @@
                       <source src="img/demo-video.webm" type="video/webm">
                     Your browser does not support the video tag.
                     </video>
-                    <img src="img/demo-screen-1.jpg" class="img-fluid" alt="">
                   </div>
                   <div class="button">
                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -240,6 +239,18 @@
     <!-- Custom scripts for this template -->
     <script src="js/new-age.min.js"></script>
 
+    <!-- Mailchimp Subscriber scripts -->
+    <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
+    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+    
+    <script>
+    function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"61e116f7453f5b0a6697c2efd","lid":"25b8a6fb68"}) })
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    };
+    
+    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+    </script>
   </body>
 
 </html>
