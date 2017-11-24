@@ -1,3 +1,5 @@
+@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
 // Bootstrap overrides for this template
 .bg-primary {
     background: $theme-primary;
@@ -52,5 +54,48 @@ section.cta {
         .container {
             // float: right;            
         }
+    }
+}
+
+#modal-image {
+    // position:absolute;
+    // top:0;
+    // bottom:0;
+    // left:0;
+    min-height:340px;
+    // max-height:340px;
+    // width:250px;
+    background: url("../img/brand-with-title.jpg"), #86334f;
+    background-size: contain, cover; 
+    background-position: 50% 40%;
+    background-repeat: no-repeat;
+    background-color: #86334f;
+    // box-sizing: border-box;
+    // display: block;
+    padding-left:0px; 
+    padding-right:0px;
+    border-top-left-radius:.3rem;        
+    border-top-right-radius:.3rem;
+    
+}
+@include media-breakpoint-up(sm) {
+    #modal-image {        
+        border-top-right-radius:0rem;
+        border-bottom-left-radius:.3rem;
+    }
+}
+
+.modal-content {
+    background: rgba(255, 255, 255, 1);
+    img {
+        min-height: 330px;
+        max-height:330px;
+        border-top-left-radius:.3rem;        
+    }
+    #mc_embed_signup .button {
+        background-color: rgb(164, 56, 106);
+    }
+    #mc_embed_signup .button:hover {
+            background-color: #ae506e;
     }
 }
