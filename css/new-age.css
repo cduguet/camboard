@@ -1223,7 +1223,7 @@ html {
   display: inline; }
 
 #modal-image {
-  min-height: 340px;
+  min-height: 200px;
   background: url("../img/brand-with-title.jpg"), #86334f;
   background-size: contain, cover;
   background-position: 50% 40%;
