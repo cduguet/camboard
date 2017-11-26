@@ -1225,7 +1225,7 @@ html {
 #modal-image {
   min-height: 200px;
   background: url("../img/brand-with-title.jpg"), #86334f;
-  background-size: contain, cover;
+  background-size: 300px, cover;
   background-position: 50% 40%;
   background-repeat: no-repeat;
   background-color: #86334f;
