@@ -1239,6 +1239,10 @@ html {
     border-top-right-radius: 0rem;
     border-bottom-left-radius: .3rem; } }
 
+@media (max-width: 575px) {
+  #modal-image {
+    height: 100px; } }
+
 .modal-content {
   background: white; }
   .modal-content img {
@@ -1249,3 +1253,17 @@ html {
     background-color: #a4386a; }
   .modal-content #mc_embed_signup .button:hover {
     background-color: #ae506e; }
+
+.modal-content .close {
+  margin: 0;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 23px;
+  height: 23px;
+  border-radius: 23px;
+  background-color: rgba(93, 93, 93, 0.7);
+  color: black;
+  font-size: 12px;
+  opacity: 1;
+  z-index: 10; }
